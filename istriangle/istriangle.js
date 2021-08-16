@@ -3,6 +3,8 @@ const is_triangle_btn = document.querySelector('#is-triangle-submit-btn');
 const output_div = document.querySelector('.output-msg');
 const error_div = document.querySelector(".error-msg");
 
+const bottom_div = document.querySelector(".footer");
+
 function isValidInput(){
     let flag = true;
     for(el of inputs){
@@ -33,6 +35,7 @@ function setOutput(status){
     else{
         output_div.innerText = "Oops! These angles don't make a triangle :("
     }
+    bottom_div.scrollIntoView();
 }
 
 function resetOutput(){

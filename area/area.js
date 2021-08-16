@@ -3,6 +3,8 @@ const find_area_btn = document.querySelector('#find-area-btn');
 const output_div = document.querySelector('.output-msg');
 const error_div = document.querySelector(".error-msg");
 
+const bottom_div = document.querySelector(".footer");
+
 function isValidInput(){
     let flag = true;
     for(el of inputs){
@@ -28,6 +30,7 @@ function resetError(){
 
 function setOutput(area){
     output_div.innerText = `The area of the triangle is ${area}`;
+    bottom_div.scrollIntoView();
 }
 
 function resetOutput(){

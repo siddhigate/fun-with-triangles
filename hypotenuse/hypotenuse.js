@@ -3,6 +3,8 @@ const find_hypo_btn = document.querySelector('#find-hypo-btn');
 const output_div = document.querySelector('.output-msg');
 const error_div = document.querySelector(".error-msg");
 
+const bottom_div = document.querySelector(".footer");
+
 function isValidInput(){
     let flag = true;
     for(el of inputs){
@@ -29,6 +31,7 @@ function resetError(){
 function setOutput(hypotenuse_length){
 
     output_div.innerText = `The length of the hypotenuse is ${hypotenuse_length}`;
+    bottom_div.scrollIntoView();
 }
 
 function resetOutput(){

@@ -4,6 +4,7 @@ const output_div = document.querySelector('.output-msg');
 const error_div = document.querySelector('.error-msg');
 const question_div = document.querySelectorAll(".question-container");
 
+const bottom_div = document.querySelector(".footer");
 const correctAnswers = ["3", "obtuse", "acute", "equilateral", "perimeter", "hypotenuse", "5", "180", "60","5"];
 
 
@@ -45,6 +46,7 @@ function setOutput(score, user_answers){
     }
 
     output_div.innerText = `Your score is ${score} / 10`;
+    bottom_div.scrollIntoView();
 }
 
 function resetOutput(){
