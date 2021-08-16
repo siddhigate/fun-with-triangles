@@ -186,7 +186,6 @@ a{
     border-bottom: 1px solid white;
 }
 
-
 /* footer */
 
 .footer{
@@ -295,4 +294,15 @@ a{
         flex-direction: column;
     }
     
+    .nav-brand{
+        margin-bottom: 1rem;
+    }
+
+    .nav-pills{
+        display: flex;
+    }
+
+    .list-item-inline{
+        padding: 0;
+    }
 }
