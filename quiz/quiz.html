@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fun with triangles</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./quiz.css">
 </head>
 <body>
 
@@ -28,42 +29,91 @@
         </div>
     </nav>
 
+    <header>
+        <div class="row1">
+            <div class="column column1"> <img src="../assets/header.gif" alt="" id="header-img"></div>
+            <div class="column column2"><h1>Triangle Quiz</h1></div>
+        </div>
+
+        
+    </header>
+
     <!-- ==== MAIN ====== -->
     <main>
         
+        <form class = 'quiz-form'>
+            <div class = 'question-container'>
+                <p>How many sides does a triangle have? </p>
+                <label><input type = "radio" name = "question1" value ="2" class="question" />2</label>
+                <label><input type = "radio" name = "question1" value ="3" class="question" />3</label>
+                <label><input type = "radio" name = "question1" value ="4" class="question" />4</label>
+            </div>
+            <div class = 'question-container'>
+                <p>A triangle with one angle greater than 90 degrees?</p>
+                <label><input type = "radio" name = "question2" value ="acute" class="question" />acute</label>
+                <label><input type = "radio" name = "question2" value ="obtuse" class="question" />obtuse</label>
+                <label><input type = "radio" name = "question2" value ="scalene" class="question" />scalene</label>
+            </div>
+            <div class = 'question-container'>
+                <p>A triangle with all three angles less than 90 degrees?</p>
+                <label><input type = "radio" name = "question3" value ="acute" class="question" />acute</label>
+                <label><input type = "radio" name = "question3" value ="obtuse" class="question" />obtuse</label>
+                <label><input type = "radio" name = "question3" value ="scalene" class="question" />scalene</label>
+            </div>
+            <div class = 'question-container'>
+                <p>A triangle having three equal sides?</p>
+                <label><input type = "radio" name = "question4" value ="acute" class="question" />acute</label>
+                <label><input type = "radio" name = "question4" value ="obtuse" class="question" />equilateral</label>
+                <label><input type = "radio" name = "question4" value ="scalene" class="question" />scalene</label>
+            </div>
+            <div class = 'question-container'>
+                <p>The sum of the measures of all three sides of a triangle</p>
+                <label><input type = "radio" name = "question5" value ="area" class="question" />area</label>
+                <label><input type = "radio" name = "question5" value ="perimeter" class="question" />perimeter</label>
+                <label><input type = "radio" name = "question5" value ="diameter" class="question" />diameter</label>
+            </div>
+            <div class = 'question-container'>
+                <p>In right triangle, the side opposite to right angle is called?</p>
+                <label><input type = "radio" name = "question6" value ="hypotenuse" class="question" />hypotenuse</label>
+                <label><input type = "radio" name = "question6" value ="altitude" class="question" />altitude</label>
+                <label><input type = "radio" name = "question6" value ="median" class="question" />median</label>
+            </div>
+            <div class = 'question-container'>
+                <p>The perimeter of a equilateral triangle is 15cm. What is the length of one side?</p>
+                <label><input type = "radio" name = "question7" value ="3" class="question" />3</label>
+                <label><input type = "radio" name = "question7" value ="5" class="question" />5</label>
+                <label><input type = "radio" name = "question7" value ="15" class="question" />15</label>
+            </div>
+            <div class = 'question-container'>
+                <p>What is the sum of all the angles of a triangle?</p>
+                <label><input type = "radio" name = "question8" value ="180" class="question" />180</label>
+                <label><input type = "radio" name = "question8" value ="360" class="question" />360</label>
+                <label><input type = "radio" name = "question8" value ="90" class="question" />90</label>
+            </div>
+            <div class = 'question-container'>
+                <p>What is the third angle for the triangle where angle1 = 60° and angle2 = 60°? </p>
+                <label><input type = "radio" name = "question9" value ="90" class="question" />90</label>
+                <label><input type = "radio" name = "question9" value ="45" class="question" />45</label>
+                <label><input type = "radio" name = "question9" value ="60" class="question" />60</label>
+            </div>
+            <div class = 'question-container'>
+                <p>What is the length of the hypotenuse of the triangle if the length of its two sides are 3 and 4?</p>
+                <label><input type = "radio" name = "question10" value ="10" class="question" />10</label>
+                <label><input type = "radio" name = "question10" value ="7" class="question" />7</label>
+                <label><input type = "radio" name = "question10" value ="5" class="question" />5</label>
+            </div>
+        </form>
+        <div class="container_center">
+            <div class="error-msg"></div>
+            <button id = "submit-ans-btn">Submit</button>
+            <div class="output-msg"></div>
+        </div>
+        
+
+            
 
         
-        <div class="container-center container">
 
-            
-
-            <div class="row1">
-                <div class="column column1"> <img src="./assets/header.gif" alt="" id="header-img"></div>
-                <div class="column column2"><h1>Fun with triangles</h1></div>
-            </div>
-
-            
-
-            
-                <div class="form-row container-center">
-                    <label for="bdate">Enter Birth-date</label>
-                    <input id="bdate" type="date" placeholder="Enter Cost Price of Stock">
-                </div>
-
-                
-                <div class="row container-center error">
-                    <p class="error-msg"></p>
-                </div>
-                <div class="row container-center">
-                    <button id="submit-btn" type="submit">Check</button>
-                </div>
-            
-
-            <div class="output_msg">
-            </div>
-
-
-        </div>
     </main>
 
 
