@@ -45,6 +45,7 @@ body{
 
 .navigation .nav-brand {
     font-weight: bold;
+    cursor: pointer;
 }
 
 
@@ -179,6 +180,10 @@ a{
     box-sizing: border-box;
     text-decoration: none;
     padding: 0.5rem 1rem;
+}
+
+.link-active{
+    border-bottom: 1px solid white;
 }
 
 
