@@ -30,10 +30,10 @@ function resetError(){
 
 function setOutput(status){
     if(status){
-        output_div.innerText = "Yayy! These angles make a triangle :)";
+        output_div.innerHTML = `<div><img src='../assets/happy.svg'></div><div style="margin:auto; font-size: 1.4rem;">Yayy! These angles make a triangle :)</div>`
     }
     else{
-        output_div.innerText = "Oops! These angles don't make a triangle :("
+        output_div.innerHTML = `<div><img src='../assets/sad.svg'></div><div style="margin:auto; font-size: 1.4rem;">Oops! These angles don't make a triangle :(</div>`;
     }
     bottom_div.scrollIntoView();
 }
