@@ -65,6 +65,7 @@ function isTriangle() {
 
 is_triangle_btn.addEventListener("click", function(){
     
+    resetAll();
     if(isValidInput()){
         isTriangle();
     }

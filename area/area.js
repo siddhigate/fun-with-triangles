@@ -53,6 +53,7 @@ function calculateArea() {
 
 find_area_btn.addEventListener("click", function(){
     
+    resetAll();
     if(isValidInput()){
         calculateArea();
     }

@@ -54,6 +54,7 @@ function findHypotenuse() {
 
 find_hypo_btn.addEventListener("click", function(){
     
+    resetAll();
     if(isValidInput()){
         findHypotenuse();
     }

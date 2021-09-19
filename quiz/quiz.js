@@ -82,7 +82,12 @@ function calculateScore () {
     
 }
 
-submit_btn.addEventListener("click", calculateScore)
+submit_btn.addEventListener("click", () => { 
+    resetError();
+    resetOutput();
+    calculateScore()
+})
+
 quiz_form.addEventListener("click", function(){
     resetError();
     resetOutput();
