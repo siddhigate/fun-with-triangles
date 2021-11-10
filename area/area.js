@@ -29,7 +29,7 @@ function resetError(){
 }
 
 function setOutput(area){
-    output_div.innerText = `The area of the triangle is ${area}`;
+    output_div.innerHTML = `The area of the triangle is ${area} unit <sup>2</sup>`;
     bottom_div.scrollIntoView();
 }
 

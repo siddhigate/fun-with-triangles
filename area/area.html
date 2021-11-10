@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,23 @@
     <title>Fun with triangles</title>
     <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
 
     <!--===== NAVIGATION =====-->
 
     <nav class="navigation ">
-        <div class="nav-brand">  <a class="link" href="../index.html"> funwithtriangles </a> </div>
+        <div class="nav-brand"> <a class="link" href="../index.html"> funwithtriangles </a> </div>
 
         <div>
             <ul class="list-non-bullet nav-pills">
-                
-                <li class="list-item-inline"> <a class="link " href="../istriangle/istriangle.html"> isTriangle? </a> </li>
-                
+
+                <li class="list-item-inline"> <a class="link " href="../istriangle/istriangle.html"> isTriangle? </a>
+                </li>
+
                 <li class="list-item-inline"> <a class="link " href="../quiz/quiz.html"> Quiz </a> </li>
-                
-                <li class="list-item-inline"> <a class="link " href="../hypotenuse/hypotenuse.html"> Hypotenuse </a> </li>
+
+                <!-- <li class="list-item-inline"> <a class="link " href="../hypotenuse/hypotenuse.html"> Hypotenuse </a> </li> -->
 
                 <li class="list-item-inline"> <a class="link link-active" href="./area.html"> Area </a> </li>
 
@@ -31,21 +34,23 @@
 
     <!-- ==== MAIN ====== -->
     <main>
-        
 
-        
+
+
         <div class="container-center container">
 
-            
+
 
             <div class="row1">
                 <div class="column column1"> <img src="../assets/header.gif" alt="" id="header-img"></div>
-                <div class="column column2"><h1>Find area of triangle</h1></div>
+                <div class="column column2">
+                    <h1>Find area of triangle</h1>
+                </div>
             </div>
 
-            
 
-            
+
+
             <div class="form-row container-center">
                 <div class="form-row container-center">
                     <label for="bdate">Enter base</label>
@@ -57,17 +62,16 @@
                     <input class="side-input" type="number" placeholder="Enter Side B">
                 </div>
             </div>
-                
-                <div class="row container-center error">
-                    <p class="error-msg"></p>
-                </div>
-                <div class="row container-center">
-                    <button id="find-area-btn" type="submit">Check</button>
-                </div>
-            
 
-            <div class="output-msg">
+            <div class="row container-center error">
+                <p class="error-msg"></p>
             </div>
+            <div class="row container-center">
+                <button id="find-area-btn" type="submit">Check</button>
+            </div>
+
+
+            <div class="output-msg" style="margin: auto; font-size: 1.2rem; text-align: center;"></div>
 
 
         </div>
@@ -78,7 +82,7 @@
     </div>
     <footer class="footer">
         <div class="footer-header" style="margin-bottom:2rem">get in touch</div>
-        
+
         <ul class="social-links list-non-bullet" style="margin-bottom:2rem">
             <li class="list-item-inline">
                 <a href="https://twitter.com/SiddhiGate" class="link" target="blank">
@@ -101,9 +105,10 @@
                 </a>
             </li>
         </ul>
-        
+
     </footer>
-    
+
     <script src="./area.js"></script>
 </body>
+
 </html>
